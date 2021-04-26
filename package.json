@@ -1,0 +1,64 @@
+{
+  "name": "gridly-trigger-sample-nodejs",
+  "description": "A sample app in NodeJS to handle trigger changes from Gridly.",
+  "version": "0.0.1",
+  "author": "LD",
+  "private": true,
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "main": "src",
+  "scripts": {
+    "start": "node src",
+    "start:prod": "node server.js",
+    "test": "NODE_ENV=test jest --forceExit --verbose",
+    "test:unit": "npm test -- test/unit",
+    "test:integration": "npm test -- test/integration",
+    "test:watch": "npm test -- --watch",
+    "test:watch:unit": "npm run test:unit -- --watch",
+    "test:watch:integration": "npm run test:integration -- --watch",
+    "test:coverage": "npm test -- --coverage",
+    "test:coverage:unit": "npm run test:unit -- --coverage",
+    "test:coverage:integration": "npm run test:integration -- --coverage",
+    "lint": "eslint src test",
+    "lint:src": "eslint src",
+    "lint:test": "eslint test",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@koa/cors": "2",
+    "@google-cloud/text-to-speech": "^3.1.3",
+    "axios": "^0.19.2",
+    "body-parser": "^1.18.2",
+    "bunyan": "^1.8.12",
+    "dotenv": "^6.0.0",
+    "jimp": "^0.16.1",
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.0",
+    "koa-joi-router": "^6.0.0",
+    "koa-convert": "^1.2.0",
+    "koa-docs": "^2.1.0",
+    "form-data": "^4.0.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "jest-junit": "^6.4.0",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.17.1",
+    "shebang-loader": "0.0.1",
+    "supertest": "^4.0.2",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

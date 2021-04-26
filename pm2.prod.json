@@ -1,0 +1,16 @@
+
+{
+  "apps": [
+    {
+      "name": "gridly-trigger-sample-nodejs",
+      "script": "./server.js",
+      "watch": true,
+      "cwd": ".",
+      "env": {
+        "DEBUG": "*,-axm:*",
+        "APP_PORT": 4040
+      },
+      "instance_var": "INSTANCE_ID"
+    }
+  ]
+}
