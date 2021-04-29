@@ -28,6 +28,8 @@ Environment variables defined in `.env` file for:
 
 `npm run start:prod` to start in production
 
+Check out the API docs at http://localhost:5000/docs
+
 ### How to run tests
 
 `npm run test`
