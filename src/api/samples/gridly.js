@@ -13,7 +13,7 @@ module.exports = {
     description: "Sample of how to get Gridly record list."
   },
   handler: async ({ res }) => {
-    const records = await gridlyClient.records("mekoyqo19oj8l8").get();
+    const records = await gridlyClient.records("YOUR_VIEW_ID").get();
 
     return res.ok({
       data: records,
