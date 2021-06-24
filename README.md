@@ -34,6 +34,6 @@ Check out the API docs at http://localhost:5000/docs
 
 `npm run test`
 
-### How to run debuger
+### How to run debugger
 
 `node --inspect src/index.js`
